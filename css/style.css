@@ -89,6 +89,12 @@ a {
 header {
     padding: 1rem 0;
     background: var(--main_colors);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+
 }
 
 .logo img {
@@ -123,10 +129,99 @@ nav ul li::before {
     content: "";
     top: 30px;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 3px;
     background: var(--colors_white);
     opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+nav ul li:hover::before {
+    opacity: 1;
+    width: 100%;
 }
 
 /* ------------- header starts ------------- */
+
+/* ----------------showcase starts---------------------- */
+main {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.swiper {
+    height: 100vh;
+}
+
+.slide-container {
+    width: 100%;
+}
+
+.slide-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-overlay {
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-family: var(--font-family);
+    transform: translate(-50%, -50%);
+}
+
+.img-overlay p {
+    font-size: 2rem;
+    letter-spacing: 8px;
+    color: var(--colors_white);
+}
+
+.img-overlay h2 {
+    font-size: 5rem;
+    color: var(--colors_white);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate(-0%);
+    }
+}
+
+/* ----------------showcase end ---------------------- */
