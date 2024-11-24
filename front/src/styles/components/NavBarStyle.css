@@ -3,6 +3,14 @@ nav {
     left: 0;
     top: 0;
     position: sticky;
-    background-color: blueviolet;
-    padding: 20px;
+    background-color: var(--secondary-colors);
+    padding: 10px;
+}
+
+.nav_logo {
+    background-color: var(--white-colors);
+}
+
+.nav_buttons {
+    display: flex;
 }
