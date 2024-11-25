@@ -1,0 +1,42 @@
+.cardtr_container {
+    background-color: white;
+    width: 330px;
+    height: 444px;
+    position: relative;
+}
+
+.cardtr_container_img {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: red;
+    border-radius: 16px;
+}
+
+.cardtr_container_img img {
+    width: 100%;
+}
+
+.cardtr_content {
+    padding: 15px 0 0 0;
+}
+
+.cardtr_des {
+    position: absolute;
+    bottom: 0;
+}
+
+.cardtr_des p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 300px;
+}

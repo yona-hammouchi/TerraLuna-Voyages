@@ -9,8 +9,8 @@ root.render(
   <ConfigProvider
     theme={{
       "token": {
-        "colorPrimary": "#03d8f4",
-        "colorInfo": "#03d8f4"
+        "colorPrimary": "#7ab2d3",
+        "colorInfo": "#7ab2d3"
       }
     }}>
     <React.StrictMode>
